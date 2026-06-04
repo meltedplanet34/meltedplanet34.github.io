@@ -304,7 +304,6 @@ function spin() {
     function cycle() {
         display.textContent = names[index % names.length];
         index++;
-
         speed += 20;
 
         if (speed < 500) {
@@ -312,13 +311,26 @@ function spin() {
         } else {
             display.textContent = forcedWinner;
 
+            // show modal after short delay
             setTimeout(() => {
-                alert("The wheel landed on: " + forcedWinner);
+                openModal(forcedWinner);
             }, 300);
         }
     }
 
     cycle();
+}
+
+function openModal(winner) {
+    document.getElementById("modalTitle").textContent = "Result";
+    document.getElementById("modalMessage").textContent =
+        "The wheel landed on: " + winner;
+
+    document.getElementById("resultModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("resultModal").style.display = "none";
 }
 
 window.onload = () => {
