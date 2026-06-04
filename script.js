@@ -293,6 +293,31 @@ function updateSolveList() {
         list.appendChild(li);
     });
 }
+const names = ["Alice", "Bob", "Charlie", "Diana", "Ethan"];
+const forcedWinner = "Charlie"; // <- always lands on this one
+
+function spin() {
+    const display = document.getElementById("display");
+    let index = 0;
+    let speed = 50; // starting speed (ms)
+
+    function cycle() {
+        display.textContent = names[index % names.length];
+        index++;
+
+        // slow down over time
+        speed += 20;
+
+        if (speed < 500) {
+            setTimeout(cycle, speed);
+        } else {
+            // final forced result
+            display.textContent = forcedWinner;
+        }
+    }
+
+    cycle();
+}
 
 window.onload = () => {
     updateStats();
