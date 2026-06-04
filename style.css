@@ -1,0 +1,431 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: auto;
+    color: black;
+    font-size: 3rem;
+    margin-top: 2rem;
+    border: medium dashed rgb(255, 194, 119);
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+.main-nav.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 194, 119);
+    padding: 1rem 2rem;
+}
+
+.nav-title {
+    margin: 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: peachpuff;
+}
+
+#containers {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    border: medium solid navy;
+    background-color: rgb(255, 194, 119);
+
+}
+#container1 {
+    width: 80%;
+    display: flex;
+    background-color: rgb(255, 194, 119);
+    padding: 1px;
+    border-style: solid;
+    border: medium;
+    border-color: navy;
+    border-radius: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 3.5rem;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#container:hover {
+    color: peachpuff;
+}
+
+#container2 {
+    display: inline-block;
+    background-color: rgb(255, 194, 119);
+    padding: 5px;
+    border: medium solid navy;
+    border-radius: 10px;
+
+}
+
+
+.page-info {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.page-info p {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    
+}
+
+.page-info a {
+    border: medium solid navy;
+}
+
+.menu-toggle {
+    background-color: rgb(255, 194, 119);
+    color: black;
+    border: none;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+    height: 4em;
+    width: 4em;
+    position: fixed;
+    font-weight: bold;
+}
+
+.options {
+    background-color: rgb(255, 194, 119);
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 4em;
+    width: 4em;
+    font-weight: bold;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .main-nav {
+    background-color: #333;
+}
+
+body.dark-mode .menu-toggle {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .options {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode #container {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode #container2 {
+    background-color: #333;
+    border-color: white;
+}
+
+body.dark-mode #containers {
+    border-color: white;
+    background-color: #333;
+}
+
+
+body.dark-mode h1 {
+    margin: auto;
+    color: rgb(255, 194, 119);
+    font-size: 3rem;
+    margin-top: 2rem;
+    border: medium dashed whitesmoke;
+}
+
+body.dark-mode h2 {
+    text-align: center;
+    color: rgb(255, 194, 119);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+body.dark-mode h3 {
+    text-align: center;
+    color: rgb(255, 194, 119);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+body.dark-mode p {
+    text-align: center;
+    color: rgb(255, 194, 119);
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+body.dark-mode a {
+    text-decoration: none;
+    color: rgb(255, 194, 119);
+}
+
+body.dark-mode #tocPanel {
+    background-color: #333;
+    color: rgb(255, 194, 119);
+    border-color: whitesmoke;
+}
+
+.main-nav {
+    display: none;
+}
+
+
+.bottom-menu {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    bottom: 0;
+    gap: 10px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+}
+
+.menu-items.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.menu-items button {
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-items.active button:nth-child(1) {
+    transform: translateX(3rem);
+    opacity: 1;
+    transition-delay: 0.05s;
+}
+.menu-items.active button:nth-child(2) {
+    transform: translateX(2.75rem);
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.user{
+    padding: 0.5rem;
+    border: 1px solid rgb(255, 194, 119);
+    border-radius: 5px;
+    background-color: rgb(255, 194, 119);
+    align-content: center;
+    font-size: 2rem;
+    justify-content: center;
+    margin: auto;
+    display: block;
+
+}
+.pass{
+    padding: 0.5rem;
+    border: 1px solid rgb(255, 194, 119);
+    border-radius: 5px;
+    background-color: rgb(255, 194, 119);
+    align-content: center;
+    font-size: 2rem;
+    justify-content: center;
+    margin: auto;
+    display: block;
+
+}
+.LButt{
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    display: block;
+
+}
+.login{
+    margin: auto;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+}
+.register{
+    margin: auto;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#loginout {
+    font-size: 1.75rem;
+    color: rgb(255, 194, 119);
+    right: 0;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255, 194, 119);
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 4em;
+    width: 4em;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#tocPanel {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    background: rgb(255, 194, 119);
+    color: black;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: rgb(255, 194, 119);
+    padding: 5px;
+    border: medium solid navy;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#tocPanel.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#tocList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tocList li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#tocList li:hover {
+    text-decoration: underline;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.solves {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
