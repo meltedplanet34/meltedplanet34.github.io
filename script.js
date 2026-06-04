@@ -293,8 +293,8 @@ function updateSolveList() {
         list.appendChild(li);
     });
 }
-const names = ["Alice", "Bob", "Charlie", "Diana", "Ethan"];
-const forcedWinner = "Charlie";
+const names = ["Alice", "Mary", "Charlie", "Diana", "Ethan", "My Sister"];
+const forcedWinner = "Kailee";
 
 function spin() {
     const display = document.getElementById("display");
