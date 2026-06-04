@@ -333,6 +333,36 @@ function closeModal() {
     document.getElementById("resultModal").style.display = "none";
 }
 
+let counter = 0;
+const intervalMs = 5000;
+
+const display = document.getElementById("counterDisplay");
+
+function updateDisplay() {
+    display.textContent = counter;
+}
+
+function incrementCounter() {
+    counter++;
+    updateDisplay();
+}
+
+function checkMidnightReset() {
+    const now = new Date();
+
+    if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+        counter = 0;
+        updateDisplay();
+    }
+}
+
+// Start timers
+setInterval(incrementCounter, intervalMs);
+setInterval(checkMidnightReset, 1000);
+
+// Initial display
+updateDisplay();
+
 window.onload = () => {
     updateStats();
     updateSolveList();
