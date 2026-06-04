@@ -438,17 +438,18 @@ body.dark-mode #tocPanel {
     top: 0;
     width: 100%;
     height: 100%;
-    background: pink;
+    background: rgba(0,0,0,0.6);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background: magenta;
+    background: pink;
     padding: 20px 30px;
     border-radius: 10px;
     text-align: center;
     animation: fadeIn 0.3s ease;
+    text-color: black;
 }
 
 .close {
