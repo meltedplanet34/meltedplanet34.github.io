@@ -333,35 +333,48 @@ function closeModal() {
     document.getElementById("resultModal").style.display = "none";
 }
 
-let counter = 0;
-const intervalMs = 20000;
+window.onload = function () {
+    const intervalMs = 20000; // increase every 5 seconds
+    const display = document.getElementById("counterDisplay");
 
-const display = document.getElementById("counterDisplay");
+    // Load saved counter or default to 0
+    let counter = parseInt(localStorage.getItem("counterValue")) || 0;
 
-function updateDisplay() {
-    display.textContent = counter;
-}
-
-function incrementCounter() {
-    counter++;
-    updateDisplay();
-}
-
-function checkMidnightReset() {
-    const now = new Date();
-
-    if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
-        counter = 0;
-        updateDisplay();
+    function updateDisplay() {
+        display.textContent = counter;
     }
-}
 
-// Start timers
-setInterval(incrementCounter, intervalMs);
-setInterval(checkMidnightReset, 1000);
+    function saveCounter() {
+        localStorage.setItem("counterValue", counter);
+    }
 
-// Initial display
-updateDisplay();
+    function incrementCounter() {
+        counter++;
+        updateDisplay();
+        saveCounter();
+    }
+
+    function checkMidnightReset() {
+        const now = new Date();
+
+        if (
+            now.getHours() === 0 &&
+            now.getMinutes() === 0 &&
+            now.getSeconds() === 0
+        ) {
+            counter = 0;
+            updateDisplay();
+            saveCounter();
+        }
+    }
+
+    // Start timers
+    setInterval(incrementCounter, intervalMs);
+    setInterval(checkMidnightReset, 1000);
+
+    // Initial display
+    updateDisplay();
+};
 
 window.onload = () => {
     updateStats();
