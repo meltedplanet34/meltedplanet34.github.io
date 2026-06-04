@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: pink;
     text-align: center;
     font-size: 1.75rem;
     margin-top: 1rem;
@@ -15,7 +15,7 @@ h1 {
     color: black;
     font-size: 3rem;
     margin-top: 2rem;
-    border: medium dashed rgb(255, 194, 119);
+    border: medium dashed magenta;
 }
 
 h2 {
@@ -54,7 +54,7 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     padding: 1rem 2rem;
 }
 
@@ -93,13 +93,13 @@ ol {
     margin: auto;
     margin-top: 1rem;
     border: medium solid navy;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
 
 }
 #container1 {
     width: 80%;
     display: flex;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     padding: 1px;
     border-style: solid;
     border: medium;
@@ -120,7 +120,7 @@ ol {
 
 #container2 {
     display: inline-block;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     padding: 5px;
     border: medium solid navy;
     border-radius: 10px;
@@ -149,7 +149,7 @@ ol {
 }
 
 .menu-toggle {
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     color: black;
     border: none;
     cursor: pointer;
@@ -163,7 +163,7 @@ ol {
 }
 
 .options {
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     color: black;
     border: none;
     cursor: pointer;
@@ -210,7 +210,7 @@ body.dark-mode #containers {
 
 body.dark-mode h1 {
     margin: auto;
-    color: rgb(255, 194, 119);
+    color: magenta;
     font-size: 3rem;
     margin-top: 2rem;
     border: medium dashed whitesmoke;
@@ -218,7 +218,7 @@ body.dark-mode h1 {
 
 body.dark-mode h2 {
     text-align: center;
-    color: rgb(255, 194, 119);
+    color: magenta;
     font-size: 1.75rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -226,14 +226,14 @@ body.dark-mode h2 {
 
 body.dark-mode h3 {
     text-align: center;
-    color: rgb(255, 194, 119);
+    color: magenta;
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 
 body.dark-mode p {
     text-align: center;
-    color: rgb(255, 194, 119);
+    color: magenta;
     font-size: 1.75rem;
     margin-top: 1rem;
     margin-left: 5rem;
@@ -242,12 +242,12 @@ body.dark-mode p {
 
 body.dark-mode a {
     text-decoration: none;
-    color: rgb(255, 194, 119);
+    color: magenta;
 }
 
 body.dark-mode #tocPanel {
     background-color: #333;
-    color: rgb(255, 194, 119);
+    color: magenta;
     border-color: whitesmoke;
 }
 
@@ -300,9 +300,9 @@ body.dark-mode #tocPanel {
 
 .user{
     padding: 0.5rem;
-    border: 1px solid rgb(255, 194, 119);
+    border: 1px solid magenta;
     border-radius: 5px;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     align-content: center;
     font-size: 2rem;
     justify-content: center;
@@ -312,9 +312,9 @@ body.dark-mode #tocPanel {
 }
 .pass{
     padding: 0.5rem;
-    border: 1px solid rgb(255, 194, 119);
+    border: 1px solid magenta;
     border-radius: 5px;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     align-content: center;
     font-size: 2rem;
     justify-content: center;
@@ -347,7 +347,7 @@ body.dark-mode #tocPanel {
 
 #loginout {
     font-size: 1.75rem;
-    color: rgb(255, 194, 119);
+    color: magenta;
     right: 0;
 }
 
@@ -355,7 +355,7 @@ body.dark-mode #tocPanel {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     color: black;
     border: none;
     cursor: pointer;
@@ -377,11 +377,11 @@ body.dark-mode #tocPanel {
     position: fixed;
     top: 80px;
     left: 20px;
-    background: rgb(255, 194, 119);
+    background: magenta;
     color: black;
     border-radius: 8px;
     display: inline-block;
-    background-color: rgb(255, 194, 119);
+    background-color: magenta;
     padding: 5px;
     border: medium solid navy;
     border-radius: 10px;
