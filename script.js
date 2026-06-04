@@ -333,47 +333,40 @@ function closeModal() {
     document.getElementById("resultModal").style.display = "none";
 }
 
-window.onload = function () {
-    const intervalMs = 20000; // increase every 5 seconds
-    const display = document.getElementById("counterDisplay");
+const intervalMs = 20000; // increase every 5 seconds
+const display = document.getElementById("counterDisplay");
+let counter = parseInt(localStorage.getItem("counterValue")) || 0;
+function updateDisplay() {
+    display.textContent = counter;
+}
+function saveCounter() {
+    localStorage.setItem("counterValue", counter);
+}
+function incrementCounter() {
+    counter++;
+    updateDisplay();
+    saveCounter();
+}
 
-    // Load saved counter or default to 0
-    let counter = parseInt(localStorage.getItem("counterValue")) || 0;
+function checkMidnightReset() {
+    const now = new Date();
 
-    function updateDisplay() {
-        display.textContent = counter;
-    }
-
-    function saveCounter() {
-        localStorage.setItem("counterValue", counter);
-    }
-
-    function incrementCounter() {
-        counter++;
+    if (
+        now.getHours() === 0 &&
+        now.getMinutes() === 0 &&
+        now.getSeconds() === 0
+    ) {
+        counter = 0;
         updateDisplay();
         saveCounter();
     }
+}
 
-    function checkMidnightReset() {
-        const now = new Date();
+setInterval(incrementCounter, intervalMs);
+setInterval(checkMidnightReset, 1000);
 
-        if (
-            now.getHours() === 0 &&
-            now.getMinutes() === 0 &&
-            now.getSeconds() === 0
-        ) {
-            counter = 0;
-            updateDisplay();
-            saveCounter();
-        }
-    }
 
-    // Start timers
-    setInterval(incrementCounter, intervalMs);
-    setInterval(checkMidnightReset, 1000);
-
-    // Initial display
-    updateDisplay();
+updateDisplay();
 };
 
 window.onload = () => {
