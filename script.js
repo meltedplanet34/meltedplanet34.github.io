@@ -294,25 +294,27 @@ function updateSolveList() {
     });
 }
 const names = ["Alice", "Bob", "Charlie", "Diana", "Ethan"];
-const forcedWinner = "Charlie"; // <- always lands on this one
+const forcedWinner = "Charlie";
 
 function spin() {
     const display = document.getElementById("display");
     let index = 0;
-    let speed = 50; // starting speed (ms)
+    let speed = 50;
 
     function cycle() {
         display.textContent = names[index % names.length];
         index++;
 
-        // slow down over time
         speed += 20;
 
         if (speed < 500) {
             setTimeout(cycle, speed);
         } else {
-            // final forced result
             display.textContent = forcedWinner;
+
+            setTimeout(() => {
+                alert("The wheel landed on: " + forcedWinner);
+            }, 300);
         }
     }
 
