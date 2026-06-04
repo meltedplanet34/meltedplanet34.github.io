@@ -334,7 +334,7 @@ function closeModal() {
 }
 
 let counter = 0;
-const intervalMs = 5000;
+const intervalMs = 20000;
 
 const display = document.getElementById("counterDisplay");
 
