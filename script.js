@@ -367,7 +367,6 @@ setInterval(checkMidnightReset, 1000);
 
 
 updateDisplay();
-};
 
 window.onload = () => {
     updateStats();
