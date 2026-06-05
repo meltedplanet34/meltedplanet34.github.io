@@ -293,7 +293,7 @@ function updateSolveList() {
         list.appendChild(li);
     });
 }
-const names = ["Alice", "Mary", "Charlie", "Diana", "Ethan", "My Sister"];
+const names = ["Ariana Grande", "Sydney Sweeney", "Sabrina Carpenter", "Megan Fox", "Gal Gadot", "Jessica Alba"];
 const forcedWinner = "Kailee";
 
 function spin() {
