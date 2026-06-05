@@ -324,7 +324,7 @@ function spin() {
 function openModal(winner) {
     document.getElementById("modalTitle").textContent = "Result";
     document.getElementById("modalMessage").textContent =
-        "The wheel landed on: " + winner;
+        "The wheel landed on: " + winner + "\n" + "You can respin but the result won't change :)";
 
     document.getElementById("resultModal").style.display = "flex";
 }
