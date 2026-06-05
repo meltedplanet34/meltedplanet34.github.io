@@ -42,6 +42,13 @@ p {
     margin-right: 5rem;
 }
 
+button {
+    background-color: magenta;
+    height: 1.2rem;
+    width: 2rem;
+    font-size: 1rem;
+}
+
 ul {
     list-style: none;
 }
