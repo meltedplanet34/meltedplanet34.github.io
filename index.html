@@ -3,43 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMSCI 256 Final Project</title>
+    <title>Kailee Appreciation Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <nav class="main-nav active">
     <div class="nav-left">
-        <h3 class="nav-title">The Art of Speedcubing</h3>
+        <h3 class="nav-title">Kailee Appreciation Site</h3>
     </div>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="think.html">Think</a></li>
-        <li><a href="poem.html">Poem</a></li>
-        <li><a href="wheel.html">Wheel</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#think">Think</a></li>
+        <li><a href="#poem">Poem</a></li>
+        <li><a href="#wheel">Wheel</a></li>
     </ul>
 </nav>
     <div id="tocPanel">
         <strong>Sections</strong>
         <ul id="tocList"></ul>
     </div>
-    <h1>Welcome to the Art of Speedcubing!</h1>
-<div class="container2" id="container2" style="margin-top: 2rem">
-    <p>View these pages :4</p></div>
+    <div id="home" class="page"> 
+    <h1>Kailee Appreciation Site</h1>
+    <div class="container2" id="container2" style="margin-top: 2rem">
+        <p>View these pages :4</p></div>
     <div class="containers" id="containers">
         <div class="page-info">
-            <p>Learn all about speedcubing and its history!</p>
-            <a class="container1" id="container1" href="about.html">About</a>
+            <p>Wonder how often I think about you?</p>
+            <a class="container1" id="container1" href="#think">Think</a>
         </div>
         <div class="page-info">
-            <p>Learn how to solve your first cube or learn more advanced ways!</p>
-            <a class="container1" id="container1" href="poem.html">Poem</a>
+            <p>Kinda Corny</p>
+            <a class="container1" id="container1" href="#poem">Poem</a>
         </div>
         <div class="page-info">
-            <p>Practice your abilities with timers and tests!</p>
-            <a class="container1" id="container1" href="wheel.html">Wheel</a>
+            <p>Try your luck</p>
+            <a class="container1" id="container1" href="#wheel">Wheel</a>
         </div>
     </div>
+    </div>
+    <div id="think" class="page">     <h1>How many times have I thought about you</h1>
+    <div class="container2" id="container2" style="margin-top: 2rem">
+        <div id="counterDisplay" style="font-size: 2rem; font-weight: bold;">8</div>
+    </div>
+    <div id="tipBox">Loading tips...</div>
+
+        <div style="display: flex; gap: 10px; justify-content: center;">
+            <button id="prevTip">◀</button>
+            <button id="nextTip">▶</button>
+        </div>
+    </div>
+
+    
+    <div id="poem" class="page">...</div>
+
+    
+    <div id="wheel" class="page"> <h1>Hottest Woman Alive</h1>
+    <div id="display" style="font-size: 2rem; font-weight: bold;"></div>
+        <button onclick="spin()">Spin</button>
+    <div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalMessage"></p>
+    </div>
+    </div>
+    </div>
+    
     <div class="bottom-menu">
         <button class="menu-toggle" id="menu-toggle" onclick="toggle()">></button>
         <div class="menu-items" id="menu-items">
