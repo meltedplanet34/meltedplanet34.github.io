@@ -472,3 +472,12 @@ body.dark-mode #tocPanel {
     to   { opacity: 1; transform: scale(1); }
 }
 
+tipBox {
+    width: 300px;
+    padding: 15px;
+    border: medium solid blue;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
