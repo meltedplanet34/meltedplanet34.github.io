@@ -12,6 +12,7 @@
 
 function enableMusic() {
     const music = document.getElementById("bgMusic");
+    music.volume = .20;
     music.play();
     document.removeEventListener("click", enableMusic);
 }
