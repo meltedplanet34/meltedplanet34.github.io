@@ -19,6 +19,18 @@ function enableMusic() {
 
 document.addEventListener("click", enableMusic);
 
+function showPage() {
+    const hash = window.location.hash.substring(1) || "home";
+
+    document.querySelectorAll(".page").forEach(p => p.style.display = "none");
+
+    const page = document.getElementById(hash);
+    if (page) page.style.display = "block";
+}
+
+window.addEventListener("hashchange", showPage);
+window.addEventListener("load", showPage);
+
 function startInspection() {
     inspection = true;
     inspectionTime = 15;
