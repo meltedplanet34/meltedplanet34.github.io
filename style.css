@@ -47,6 +47,7 @@ button {
     height: 1.2rem;
     width: 2rem;
     font-size: 1rem;
+    border: medium solid blue;
 }
 
 ul {
