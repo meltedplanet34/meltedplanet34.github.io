@@ -10,6 +10,9 @@
     let timerRunning = false;
     let readyToStart = false;
 
+const music = document.getElementById("bgMusic");
+music.play();
+
 function startInspection() {
     inspection = true;
     inspectionTime = 15;
