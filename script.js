@@ -368,6 +368,36 @@ setInterval(checkMidnightReset, 1000);
 
 updateDisplay();
 
+const tips = [
+        "Tip 1: You can customize this however you want.",
+        "Tip 2: Add animations for smoother transitions.",
+        "Tip 3: Store tips in a database or JSON file.",
+        "Tip 4: Style this box to match your theme.",
+        "Tip 5: Add swipe gestures for mobile."
+    ];
+
+let currentTip = 0;
+
+const tipBox = document.getElementById("tipBox");
+const prevBtn = document.getElementById("prevTip");
+const nextBtn = document.getElementById("nextTip");
+
+function updateTip() {
+    tipBox.textContent = tips[currentTip];
+}
+
+prevBtn.onclick = function () {
+    currentTip = (currentTip - 1 + tips.length) % tips.length;
+    updateTip();
+};
+
+nextBtn.onclick = function () {
+    currentTip = (currentTip + 1) % tips.length;
+    updateTip();
+};
+
+updateTip();
+
 window.onload = () => {
     updateStats();
     updateSolveList();
