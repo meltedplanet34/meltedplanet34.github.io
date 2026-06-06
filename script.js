@@ -10,8 +10,13 @@
     let timerRunning = false;
     let readyToStart = false;
 
-const music = document.getElementById("bgMusic");
-music.play();
+function enableMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+    document.removeEventListener("click", enableMusic);
+}
+
+document.addEventListener("click", enableMusic);
 
 function startInspection() {
     inspection = true;
