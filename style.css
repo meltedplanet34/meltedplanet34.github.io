@@ -222,7 +222,6 @@ body.dark-mode #containers {
 
 
 body.dark-mode h1 {
-    margin: auto;
     color: magenta;
     border: medium dashed whitesmoke;
 }
