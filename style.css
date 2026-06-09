@@ -224,33 +224,22 @@ body.dark-mode #containers {
 body.dark-mode h1 {
     margin: auto;
     color: magenta;
-    font-size: 3rem;
-    margin-top: 2rem;
     border: medium dashed whitesmoke;
 }
 
 body.dark-mode h2 {
     text-align: center;
     color: magenta;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 body.dark-mode h3 {
     text-align: center;
     color: magenta;
-    font-size: 1.5rem;
-    margin-top: 1rem;
 }
 
 body.dark-mode p {
     text-align: center;
     color: magenta;
-    font-size: 1.75rem;
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
 
 body.dark-mode a {
