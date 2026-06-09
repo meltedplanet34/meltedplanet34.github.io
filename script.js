@@ -390,11 +390,12 @@ setInterval(checkMidnightReset, 1000);
 updateDisplay();
 
 const tips = [
-        "Tip 1: You can customize this however you want.",
-        "Tip 2: Add animations for smoother transitions.",
-        "Tip 3: Store tips in a database or JSON file.",
-        "Tip 4: Style this box to match your theme.",
-        "Tip 5: Add swipe gestures for mobile."
+        "Did it hurt when you fell from the vending machine? Because you're looking like a snack",
+        "I lost my bed, can I sleep in yours :(",
+        "The Front... Stunning\nThe Back... Gorgeous\nThe Side... Beautiful",
+        "A dihh so polite it stands up so you can sit down",
+        "Did you know today is national send that man a kitty pic day?",
+        "There are 16 billion lips in the world and your 4 are the only ones I'd kiss :4"
     ];
 
 let currentTip = 0;
